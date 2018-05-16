@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Cashier"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Handles iOS IAP Subscriptions"
 
   # This description is used to generate tags and improve search results.
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  Testing description pod field.
                    DESC
 
   #s.homepage     = "http://EXAMPLE/Cashier"
