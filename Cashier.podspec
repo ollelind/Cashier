@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   Testing description pod field.
                    DESC
 
-  #s.homepage     = "http://EXAMPLE/Cashier"
+  s.homepage     = "https://github.com/ollelind/Cashier"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
