@@ -10,6 +10,9 @@
 		417B3C5920AC73DF00CAB3EE /* Cashier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417B3C4F20AC73DF00CAB3EE /* Cashier.framework */; };
 		417B3C5E20AC73DF00CAB3EE /* CashierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B3C5D20AC73DF00CAB3EE /* CashierTests.swift */; };
 		417B3C6020AC73DF00CAB3EE /* Cashier.h in Headers */ = {isa = PBXBuildFile; fileRef = 417B3C5220AC73DF00CAB3EE /* Cashier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		417B3C6A20AC73FE00CAB3EE /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B3C6920AC73FE00CAB3EE /* Cashier.swift */; };
+		417B3C6C20AC745100CAB3EE /* SubscriptionProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B3C6B20AC745100CAB3EE /* SubscriptionProduct.swift */; };
+		417B3C6E20AC7D7D00CAB3EE /* SubscriptionProductProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B3C6D20AC7D7D00CAB3EE /* SubscriptionProductProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		417B3C5820AC73DF00CAB3EE /* CashierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		417B3C5D20AC73DF00CAB3EE /* CashierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierTests.swift; sourceTree = "<group>"; };
 		417B3C5F20AC73DF00CAB3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417B3C6920AC73FE00CAB3EE /* Cashier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cashier.swift; sourceTree = "<group>"; };
+		417B3C6B20AC745100CAB3EE /* SubscriptionProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionProduct.swift; sourceTree = "<group>"; };
+		417B3C6D20AC7D7D00CAB3EE /* SubscriptionProductProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionProductProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				417B3C5220AC73DF00CAB3EE /* Cashier.h */,
 				417B3C5320AC73DF00CAB3EE /* Info.plist */,
+				417B3C6920AC73FE00CAB3EE /* Cashier.swift */,
+				417B3C6B20AC745100CAB3EE /* SubscriptionProduct.swift */,
+				417B3C6D20AC7D7D00CAB3EE /* SubscriptionProductProvider.swift */,
 			);
 			path = Cashier;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					417B3C4E20AC73DF00CAB3EE = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					417B3C5720AC73DF00CAB3EE = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -194,6 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417B3C6C20AC745100CAB3EE /* SubscriptionProduct.swift in Sources */,
+				417B3C6E20AC7D7D00CAB3EE /* SubscriptionProductProvider.swift in Sources */,
+				417B3C6A20AC73FE00CAB3EE /* Cashier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 		417B3C6420AC73DF00CAB3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.nattkod.Cashier;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		417B3C6520AC73DF00CAB3EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +405,7 @@
 		417B3C6720AC73DF00CAB3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T87XL4UV6;
 				INFOPLIST_FILE = CashierTests/Info.plist;
@@ -407,6 +424,7 @@
 		417B3C6820AC73DF00CAB3EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T87XL4UV6;
 				INFOPLIST_FILE = CashierTests/Info.plist;
