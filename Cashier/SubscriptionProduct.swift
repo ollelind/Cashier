@@ -49,9 +49,6 @@ class SubscriptionProduct: NSObject {
         }
     }
     
-    // Needs receipt validation
-    let hasTrialPeriod: Bool = false
-    
     init(product: SKProduct) {
         self.iTunesProduct = product
         super.init()
